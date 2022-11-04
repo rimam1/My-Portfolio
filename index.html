@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rashid portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Noto+Sans+Mono:wght@100;200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/mylogo.png" class="logo" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li>
+              <a
+                href="https://docs.google.com/document/d/1BEJwwlxVatAMldsFvv84R4lyJoP4J0bARZY3_Q8QLUw/edit?usp=sharing"
+                target="_blank"
+                >Resume</a
+              >
+            </li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-sharp fa-solid fa-xmark" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Hello, my name is </p>
+          <h1><span>Rashid</span> Imam <br />I'm from NIT, Patna</h1>
+        </div>
+      </div>
+    </div>
+    <!-- aboutttt .............................................-->
+    <div id="about">
+      <div>
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="images/rashid1.jpg" alt="" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="subtitle">About Me</h1>
+              <p>
+                My name is Rashid Imam, I am from Gaya, Bihar. Currently I am pursuing my dual degree masters from National Institute of Technology, Patna, Bihar. I am very passionate about Web Development and Machine Learning. I am looking forward to secure a good technical position in a company where I can use the skills learned during my academics and I am willing to
+                learn new concepts and techniques for my personal as well as company's growth. Apart from my academics I am Currently Training and Placement Co-ordinator of NIT, Patna also I have been  workshop co-ordinator of Robotics Club, NIT Patna. 
+              </p>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  Education
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>Programming/ Scripting
+                    Languages</span><br />C++ | Python | SQL <br>HTML | CSS | JavaScript <br>NodeJs | ExpressJS | Arduino
+                  </li>
+                  <li><span>Libraries used</span><br />NumPy | Pandas | Matplotlib | Scikit-learn</li>
+                  <li>
+                    <span>Software/ Packages used</span><br />MS Office | Jupyter Notebook | VS Code | Photoshop
+
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>Training and Placement Co-ordinator</span
+                    ><br />Training and Placement Cell, NIT Patna<br />(Apr 2022
+                    - Till Date)
+                  </li>
+                  <li>
+                    <span>Associate Robotics Trainer</span><br />(2 months Internship, Summer 2022) <br> CodeJee
+                  </li>
+                  <li>
+                    <span>Workshop Co-ordinator</span><br />Robotics Club, NIT
+                    Patna
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>Integrated MSc</span><br />National Institute of
+                    Technology, Patna <br />(2018 -2023)
+                  </li>
+                  <li>
+                    <span>Intermediate</span><br />Laloo Mandal College
+                    <br />Gaya, Bihar
+                  </li>
+                  <li>
+                    <span>Matriculation</span><br />Gyan Bharti Public School
+                    <br />Gaya, Bihar
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="project">
+      <div class="container">
+        <h1 class="subtitle">My Project</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/houseprediction.jpg" alt="" />
+          </div>
+          <div class="work">
+            <video
+              controls
+              poster="images/homeautomation.png"
+              src="images/automation.mp4"
+            ></video>
+          </div>
+          <div class="work">
+            <img src="images/linefollower.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------------------------------- -->
+    <div class="container">
+      <div class="services-list">
+        <div>
+          <h2>House Price Prediction</h2>
+          <p>
+            I have developed an ML model which takes 4 parameters location, sqft, num of bathroom and bhk to predict the price of house in Bengaluru with accuracy of over 80% using Linear Regression. I Used Data Analysis & Data Cleaning techniques, Feature Engineering, One Hot Encoding, Model training and testing. 
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <h2>Home Automation</h2>
+          <p>
+            In this project I have automated the Bulb and Fan of my hostel room. I used Arduino Uno, Bluetooth Module, Relay Module to switch on and switch off my fan and bulb by just sending Bluetooth signal from our mobile phone.
+            Challenges which I faced during this project was it was so risky to deal with the AC Current and do the connections with the board.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <h2>Line Follower Bot</h2>
+          <p>
+            Built a low cost hardware product (₹500-800) which follows black lines and can detect obstacles which come infront of this bot.
+            Designed the circuit by using IR Sensors, Ultrasonic Sensors and wrote Arduino code to get the real time reading of all the
+            sensors in synchronized manner
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+    <a class="btn" href="#">Click here to see more</a>
+
+    <!-- ---------------------------------Contact---------------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p><i class="fa-regular fa-envelope"></i>rimamvibrant@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+91 7256064888</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+              <a
+                href="https://www.linkedin.com/in/rashid-imam-27a6b41b2"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://github.com/rimam1" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="copy">
+        <p> Designed & Developed by <span id="rashid">Rashid Imam </span></p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
