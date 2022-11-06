@@ -36,7 +36,7 @@
             <li><a href="#contact">Contact</a></li>
             <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
-          <i class="fa-sharp fa-solid fa-xmark" onclick="openmenu()"></i>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
           <p>Hello, my name is </p>
@@ -55,7 +55,7 @@
             <div class="about-col-2">
               <h1 class="subtitle">About Me</h1>
               <p>
-                My name is Rashid Imam, I am from Gaya, Bihar. Currently I am pursuing my dual degree masters from National Institute of Technology, Patna, Bihar. I am very passionate about Web Development and Machine Learning. I am looking forward to secure a good technical position in a company where I can use the skills learned during my academics and I am willing to
+                My name is Rashid Imam, I am from Gaya, Bihar. Currently, I am pursuing my dual degree masters from National Institute of Technology, Patna, Bihar. I am very passionate about Web Development and Machine Learning. I am looking forward to secure a good technical position in a company where I can use the skills learned during my academics and I am willing to
                 learn new concepts and techniques for my personal as well as company's growth. Apart from my academics I am Currently Training and Placement Co-ordinator of NIT, Patna also I have been  workshop co-ordinator of Robotics Club, NIT Patna. 
               </p>
 
@@ -73,7 +73,7 @@
               <div class="tab-contents active-tab" id="skills">
                 <ul>
                   <li><span>Programming/ Scripting
-                    Languages</span><br />C++ | Python | SQL <br>HTML | CSS | JavaScript <br>NodeJs | ExpressJS | Arduino
+                    Languages</span><br />C++ | Python | SQL <br>HTML | CSS | JavaScript | Arduino
                   </li>
                   <li><span>Libraries used</span><br />NumPy | Pandas | Matplotlib | Scikit-learn</li>
                   <li>
@@ -193,7 +193,7 @@
             </div>
           </div>
           <div class="contact-right">
-            <form>
+            <form name="submit-to-google-sheet">
               <input type="text" name="Name" placeholder="Your Name" required />
               <input
                 type="email"
@@ -208,6 +208,7 @@
               ></textarea>
               <button type="submit" class="btn btn2">Submit</button>
             </form>
+            <span id="msg"></span>
           </div>
         </div>
       </div>
