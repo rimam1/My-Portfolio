@@ -1,51 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <%- include("./partials/headerlinks") %>
-</head>
-<body>
-  <%- include("./partials/navbar") %>
+  </head>
+  <body>
+    <%- include("./partials/navbar") %>
 
     <div id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="contact-left">
-              <h1 class="subtitle">Contact Me</h1>
-              <p><i class="fa-regular fa-envelope"></i>rimamvibrant@gmail.com</p>
-              <p><i class="fa-solid fa-phone"></i>+91 7256064999</p>
-              <div class="social-icons">
-                <a href="https://www.facebook.com/rimam999" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-                <a
-                  href="https://www.linkedin.com/in/rashid-imam-27a6b41b2"
-                  target="_blank"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
-                <a href="https://www.instagram.com/_rashid_imam/?igshid=YmMyMTA2M2Y%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/rimam1" target="_blank"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-            <div class="contact-right">
-              <form name="submit-to-google-sheet">
-                <input type="text" name="Name" placeholder="Your Name" required />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                />
-                <textarea
-                  name="Message"
-                  rows="6"
-                  placeholder="Your Message"
-                ></textarea>
-                <button type="submit" class="btn btn2">Submit</button>
-              </form>
-              <span id="msg"></span>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p>
+              <i class="fa-regular fa-envelope"></i
+              ><a
+                href="mailto:rimamvibrant@gmail.com"
+                style="color: antiquewhite; text-decoration: none"
+                >rimamvibrant@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i
+              ><a
+                href="tel:+917256064999"
+                style="color: antiquewhite; text-decoration: none"
+                >+91 7256064999</a
+              >
+            </p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/rimam999" target="_blank"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/rashid-imam-27a6b41b2"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/_rashid_imam/?igshid=YmMyMTA2M2Y%3D"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://github.com/rimam1" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
           </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
+      </div>
     </div>
     <%- include("./partials/footer") %>
     <script src="/js/index.js"></script>
-</body>
+  </body>
 </html>
