@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/headerlinks") %>
+  </head>
+  <body>
+    <%- include("./partials/navbar") %>
+
+    <div id="project">
+      <div class="container">
+        <h1 class="subtitle">My Project</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/houseprediction.jpg" alt="" />
+            <div class="services-list">
+              <div>
+                <h2>House Price Prediction</h2>
+                <p>
+                  I have developed an ML model which takes 4 parameters
+                  location, sqft, num of bathroom and bhk to predict the price
+                  of house in Bengaluru with accuracy of over 80% using Linear
+                  Regression. I Used Data Analysis & Data Cleaning techniques,
+                  Feature Engineering, One Hot Encoding, Model training and
+                  testing.
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <video
+              controls
+              poster="images/homeautomation.png"
+              src="images/automation.mp4"
+            ></video>
+            <div class="services-list">
+              <div>
+                <h2>Home Automation</h2>
+                <p>
+                  In this project I have automated the Bulb and Fan of my hostel
+                  room. I used Arduino Uno, Bluetooth Module, Relay Module to
+                  switch on and switch off my fan and bulb by just sending
+                  Bluetooth signal from our mobile phone. Challenges which I
+                  faced during this project was it was so risky to deal with the
+                  AC Current and do the connections with the board.
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/linefollower.png" alt="" />
+            <div class="services-list">
+              <div>
+                <h2>Line Follower Bot</h2>
+                <p>
+                  Built a low cost hardware product (₹500-800) which follows
+                  black lines and can detect obstacles which come infront of
+                  this bot. Designed the circuit by using IR Sensors, Ultrasonic
+                  Sensors and wrote Arduino code to get the real time reading of
+                  all the sensors in synchronized manner
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <a class="btn" href="#">Click here to see more</a>
+    <%- include("./partials/footer") %>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("./partials/headerlinks") %>
+</head>
+<body>
+    <%- include("./partials/navbar") %>
+
+    <div id="about">
+        <div>
+          <div class="container">
+            <div class="row">
+              <div class="about-col-1">
+                <img src="images/rashid1.jpg" alt="" />
+              </div>
+              <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>
+                  My name is Rashid Imam, I am from Gaya, Bihar. Currently, I am pursuing my dual degree masters from National Institute of Technology, Patna, Bihar. I am very passionate about Web Development and Machine Learning. I am looking forward to secure a good technical position in a company where I can use the skills learned during my academics and I am willing to
+                  learn new concepts and techniques for my personal as well as company's growth. Apart from my academics I am Currently Training and Placement Co-ordinator of NIT, Patna also I have been  workshop co-ordinator of Robotics Club, NIT Patna. 
+                </p>
+  
+                <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">
+                    Skills
+                  </p>
+                  <p class="tab-links" onclick="opentab('experience')">
+                    Experience
+                  </p>
+                  <p class="tab-links" onclick="opentab('education')">
+                    Education
+                  </p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                    <li><span>Programming/ Scripting
+                      Languages</span><br />C++ | Python | SQL | MongoDB <br>HTML | CSS | JavaScript | Node.js | Arduino
+                    </li>
+                    <li><span>Libraries used</span><br />NumPy | Pandas | Matplotlib | Express.js | Scikit-learn</li>
+                    <li>
+                      <span>Software/ Packages used</span><br />MS Office | Jupyter Notebook | VS Code | Photoshop
+  
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                  <ul>
+                    <li>
+                      <span>Training and Placement Co-ordinator</span
+                      ><br />Training and Placement Cell, NIT Patna<br />(Apr 2022
+                      - Till Date)
+                    </li>
+                    <li>
+                      <span>Associate Robotics Trainer</span><br />(2 months Internship, Summer 2022) <br> CodeJee
+                    </li>
+                    <li>
+                      <span>Workshop Co-ordinator</span><br />Robotics Club, NIT
+                      Patna
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                  <ul>
+                    <li>
+                      <span>Integrated MSc</span><br />National Institute of
+                      Technology, Patna <br />(2018 -2023)
+                    </li>
+                    <li>
+                      <span>Intermediate</span><br />Laloo Mandal College
+                      <br />Gaya, Bihar
+                    </li>
+                    <li>
+                      <span>Matriculation</span><br />Gyan Bharti Public School
+                      <br />Gaya, Bihar
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <%- include("./partials/footer") %>
+    <script src="/js/index.js"></script>
+</body>
+</html>
